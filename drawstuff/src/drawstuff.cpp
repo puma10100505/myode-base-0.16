@@ -1041,17 +1041,13 @@ static void drawGround()
 
   glBegin (GL_QUADS);
   glNormal3f (0,0,1);
-  glTexCoord2f (-gsize*ground_scale + ground_ofsx,
-		-gsize*ground_scale + ground_ofsy);
+  glTexCoord2f (-gsize*ground_scale + ground_ofsx, -gsize*ground_scale + ground_ofsy);
   glVertex3f (-gsize,-gsize,offset);
-  glTexCoord2f (gsize*ground_scale + ground_ofsx,
-		-gsize*ground_scale + ground_ofsy);
+  glTexCoord2f (gsize*ground_scale + ground_ofsx,-gsize*ground_scale + ground_ofsy);
   glVertex3f (gsize,-gsize,offset);
-  glTexCoord2f (gsize*ground_scale + ground_ofsx,
-		gsize*ground_scale + ground_ofsy);
+  glTexCoord2f (gsize*ground_scale + ground_ofsx,gsize*ground_scale + ground_ofsy);
   glVertex3f (gsize,gsize,offset);
-  glTexCoord2f (-gsize*ground_scale + ground_ofsx,
-		gsize*ground_scale + ground_ofsy);
+  glTexCoord2f (-gsize*ground_scale + ground_ofsx, gsize*ground_scale + ground_ofsy);
   glVertex3f (-gsize,gsize,offset);
   glEnd();
 
